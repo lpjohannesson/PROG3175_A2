@@ -7,7 +7,7 @@ const port = 80;
 
 const db = database.createDatabase();
 
-let timesOfDay, languages, tones;
+let timesOfDay, languages;
 
 (async () => {
     await database.getColumnList(db, 'timeOfDay').then((list) => {
